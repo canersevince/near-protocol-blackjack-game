@@ -3,6 +3,19 @@ blackjack
 
 This [Vue] app was initialized with [create-near-app]
 
+blackjack Smart Contract
+==================
+Simple blackjack implementation. Storing game state on NEAR blockchain and clear data after the game ends then transfer 2x bet to player if wins.
+
+* You have to run contract.init() from your browser console after deploying contract. This will make the function caller the owner of contract.
+* Not recommended to use on any other place than testnet. 
+* You need to set owner in contract.
+* You need to make sure player has 5 token at least to play.
+
+
+A [smart contract] written in [AssemblyScript] for an app initialized with [create-near-app]
+![Game Screen](https://i.ibb.co/V0FkKXq/Screenshot-1.png)
+
 
 Quick Start
 ===========
