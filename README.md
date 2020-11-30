@@ -8,9 +8,10 @@ blackjack Smart Contract
 Simple blackjack implementation. Storing game state on NEAR blockchain and clear data after the game ends then transfer 2x bet to player if wins.
 
 * You have to run contract.init() from your browser console after deploying contract. This will make the function caller the owner of contract.
-* Not recommended to use on any other place than testnet. 
+* Not recommended to use on any other place than testnet since lots of storage is used.
+* If you are going to make some kind of application like this you would probably store big datas(like games json state) in your database and use blockchain to store something like player:gameid game ids in a map, then pull the game state from your database with that id.
 * You need to set owner in contract.
-* You need to make sure player has 5 token at least to play.
+* And player has to have at least 5 token to play a game. And the game logic might be little bit broken i just tried something experimental.
 
 
 A [smart contract] written in [AssemblyScript] for an app initialized with [create-near-app]
